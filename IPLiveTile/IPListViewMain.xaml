@@ -1,0 +1,12 @@
+﻿<Page
+    x:Class="IPLiveTile.IPListViewMain"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IPLiveTile">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ListView Name="IPListView"
+                  ItemContainerStyle="{StaticResource IPListViewContainerStyle}"
+                  ItemTemplate="{StaticResource IPListViewItemStyle}"/>
+    </Grid>
+</Page>

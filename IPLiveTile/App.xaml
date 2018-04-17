@@ -1,0 +1,24 @@
+﻿<Application
+    x:Class="IPLiveTile.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IPLiveTile"
+    xmlns:svm="using:SplitViewMenu"
+    xmlns:exp="using:Expander"
+    xmlns:nud="using:NumericUpDown"
+    RequestedTheme="Light">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Expander/Styles/ExpanderStyle.xaml" />
+                <ResourceDictionary Source="/NumericUpDown/Styles/NumericUpDownStyle.xaml" />
+                <ResourceDictionary Source="/SplitViewMenu/Styles/SplitViewMenuStyle.xaml" />
+                <ResourceDictionary Source="/Styles/IPListStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <Style TargetType="TextBlock">
+                <Setter Property="TextTrimming" Value="CharacterEllipsis"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,63 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IPLiveTile"
+    xmlns:list="using:IPLiveTileList"
+    xmlns:exp="using:Expander">
+
+    <list:IPListStringVisibilityConverter x:Key="IPListStringVisibilityConverter" />
+    <list:IPListStringFormatConverter x:Key="IPListStringFormatConverter" />
+
+    <Style x:Key="IPListViewContainerStyle" TargetType="ListViewItem">
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ListViewItem">
+                    <ListViewItemPresenter ContentMargin="0"
+                                           MinHeight="48"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <DataTemplate x:Key="IPListViewItemStyle">
+        <exp:Expander> 
+            <exp:Expander.Header>
+                <Grid Background="Transparent">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="{Binding IPAddress}"
+                               FontSize="16"
+                               VerticalAlignment="Center"
+                               Padding="10,0,0,0"
+                               TextTrimming="CharacterEllipsis"/>
+                    <TextBlock Grid.Column="1" 
+                               Text="{Binding InterfaceIcon}"
+                               FontSize="20"
+                               FontFamily="Segoe MDL2 Assets"
+                               VerticalAlignment="Center"
+                               Padding="0,0,20,0"/>
+                </Grid>
+            </exp:Expander.Header>
+            <exp:Expander.Content>
+                <StackPanel Background="{ThemeResource SystemControlHighlightListLowBrush}">
+                    <TextBlock Text="{Binding DomainStatus, Converter={StaticResource IPListStringFormatConverter}, ConverterParameter='Domain Status\: \{0\}'}"
+                               Visibility="{Binding DomainStatus, Converter={StaticResource IPListStringVisibilityConverter}}"
+                               FontSize="14"
+                               VerticalAlignment="Center"
+                               Padding="20,5,5,5"
+                               TextTrimming="CharacterEllipsis"/>
+                    <TextBlock Text="{Binding SSID, Converter={StaticResource IPListStringFormatConverter}, ConverterParameter='Wireless SSID\: \{0\}'}"
+                               Visibility="{Binding SSID, Converter={StaticResource IPListStringVisibilityConverter}}"
+                               FontSize="14"
+                               VerticalAlignment="Center"
+                               Padding="20,5,5,5"
+                               TextTrimming="CharacterEllipsis"/>
+                </StackPanel>
+            </exp:Expander.Content>
+        </exp:Expander>
+    </DataTemplate>
+
+</ResourceDictionary>
