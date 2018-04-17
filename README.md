@@ -1,8 +1,8 @@
-<p align="right">![MainList](https://github.com/j4c3/IPLiveTile/blob/master/Readme_Resources/IPLiveTile_MainList.png) &nbsp; &nbsp; ![Settings](https://github.com/j4c3/IPLiveTile/blob/master/Readme_Resources/IPLiveTile_Settings.png)</p>
 ## IPLiveTile
+<p align="right"><img align="right" src="https://github.com/j4c3/IPLiveTile/blob/master/Readme_Resources/IPLiveTile_MainList.png"> &nbsp; &nbsp; <img align="right" src="https://github.com/j4c3/IPLiveTile/blob/master/Readme_Resources/IPLiveTile_Settings.png"></p>
 A C#/UWP project utilizing Live Tiles to display IP information.  I wanted to explore using a splitview menu and MVVM. 
 
-![Tile](https://github.com/j4c3/IPLiveTile/blob/master/Readme_Resources/IPLiveTile_Tile.png) &nbsp; &nbsp; 
+<p><img align="center" src="https://github.com/j4c3/IPLiveTile/blob/master/Readme_Resources/IPLiveTile_Tile.png"></p> 
 
 ## To Do
 - Display more information when selecting an item in the list
