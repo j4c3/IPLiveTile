@@ -9,4 +9,4 @@
 <p>I wanted to explore using a splitview menu and MVVM.</p>
 
 ## To Do
-- Display more information when selecting an item in the list
+- Display more information when selecting an item in the IP List
