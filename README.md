@@ -1,6 +1,6 @@
 ## IPLiveTile
 <p align="right">
-  <img src="https://github.com/j4c3/IPLiveTile/blob/master/Readme_Resources/IPLiveTile_Settings.png">
+  <img align="right" src="https://github.com/j4c3/IPLiveTile/blob/master/Readme_Resources/IPLiveTile_Settings.png">
     &nbsp; &nbsp;
   <img align="right" src="https://github.com/j4c3/IPLiveTile/blob/master/Readme_Resources/IPLiveTile_MainList.png">
 </p>
